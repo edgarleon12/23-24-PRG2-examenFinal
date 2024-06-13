@@ -1,13 +1,13 @@
 public class Pan
 {
 
-    public PanBrioche(String nuevoNombre)
+    public PanBrioche(String nuevoPan)
     {
         nombre = "Brioche";
         vista = "##############"
     }
 
-    public PanIntegral(String nuevoNombre)
+    public PanIntegral(String nuevoPan)
     {
         nombre = "Integral";
         vista = "||||||||||||||"
