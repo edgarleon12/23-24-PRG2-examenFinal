@@ -1,21 +1,39 @@
-public class CarneCoccion
-{
+package Coccion;
+
+public class CarneCoccion {
     private String tipo;
-    public Pocohecha(String nuevoTipo)
-    {
+
+    public CarneCoccion(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public void setPocoHecha() {
         tipo = "Poco Hecha";
-        return tipo
     }
 
-    public MedioHecha(String nuevoTipo)
-    {
-        tipo = "MedioHecha";
-        return tipo
+    public void setMedioHecha() {
+        tipo = "Medio Hecha";
     }
 
-    public MuyHecha(String nuevoTIpo)
-    {
-        tipo = "MuyHecha";
-        return tipo
+    public void setMuyHecha() {
+        tipo = "Muy Hecha";
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public static void main(String[] args) {
+        CarneCoccion carne = new CarneCoccion("Cruda");
+        System.out.println(carne.getTipo()); 
+
+        carne.setPocoHecha();
+        System.out.println(carne.getTipo()); 
+
+        carne.setMedioHecha();
+        System.out.println(carne.getTipo()); 
+
+        carne.setMuyHecha();
+        System.out.println(carne.getTipo());
     }
 }
